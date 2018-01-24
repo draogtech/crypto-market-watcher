@@ -4,7 +4,7 @@
   "private": true,
   "main": "app.js",
   "scripts": {
-    "start": "node ./bin/start",
+    "start": "nodemon ./bin/start",
     "test": "mocha --recursive './test/*Test.js' --compilers js:babel-core/register"
   },
   "dependencies": {
@@ -14,11 +14,15 @@
     "babel-preset-stage-0": "^6.24.1",
     "body-parser": "^1.16.1",
     "cookie-parser": "^1.4.3",
+    "crypto-socket": "^3.0.0",
     "debug": "^3.0.0",
     "ejs": "^2.5.7",
     "express": "^4.15.4",
     "morgan": "^1.8.2",
-    "serve-favicon": "^2.4.3"
+    "nodemon": "^1.14.11",
+    "serve-favicon": "^2.4.3",
+    "socket.io": "^2.0.4",
+    "yarn": "^1.3.2"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
